@@ -1,0 +1,33 @@
+{
+    "apiVersion": "extensions/v1",
+    "kind": "Deployment",
+    "metadata": {
+	"name": "custom-metric",
+	"labels": {
+	    "name": "custom-metric"
+	}
+    },
+    "spec": {
+	"replicas": 3,
+	"template": {
+	    "metadata": {
+		"labels": {
+		    "name": "custom-metric"
+		}
+	    },
+	    "spec": {
+		"containers": [
+		    {
+			"name": "custom-metric",
+			"image": "dfedoruk/custom-metric",
+			"ports": [
+			    {
+				"containerPort": 8181
+			    }
+			]
+		    }
+		]
+	    }
+	}
+    }
+}
