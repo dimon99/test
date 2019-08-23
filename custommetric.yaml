@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     strategy.spinnaker.io/max-version-history: '2'
-    traffic.spinnaker.io/load-balancers: '["service my-service"]'
+    traffic.spinnaker.io/load-balancers: '["service custom-metric"]'
   name: custom-metric
   labels:
      name: custom-metric
