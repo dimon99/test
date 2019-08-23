@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: extensions/v1
 kind: Deployment
 metadata:
   name: custom-metric
